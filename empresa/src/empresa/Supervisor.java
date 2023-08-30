@@ -4,9 +4,13 @@ public class Supervisor extends Empleado {
 	private String area;
 	private int cantEmpleados;
 
-	public Supervisor(int documento, String nombre, Direccion direccion) {
+
+
+	
+	public Supervisor(int documento, String nombre, Direccion direccion, String area, int cantEmpleados) {
 		super(documento, nombre, direccion);
-		// TODO Auto-generated constructor stub
+		this.area = area;
+		this.cantEmpleados = cantEmpleados;
 	}
 
 	public Supervisor(int documento, String nombre, Direccion direccion, int legajo, int antiguedad, int sueldoBasico) {
@@ -14,10 +18,9 @@ public class Supervisor extends Empleado {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Supervisor(int documento, String nombre, Direccion direccion, String area, int cantEmpleados) {
+	public Supervisor(int documento, String nombre, Direccion direccion) {
 		super(documento, nombre, direccion);
-		this.area = area;
-		this.cantEmpleados = cantEmpleados;
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getArea() {
